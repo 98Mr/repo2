@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="UsePrinter" class="yxm.pojo.Printer">
+<property name="brand" value="惠普"/>
+<property name="ink" ref="Black"></property>
+<property name="paper" ref="A4"></property>
+</bean>
+
+<bean id="A4" class="yxm.pojo.A4Paper"></bean>
+<bean id="B5" class="yxm.pojo.B5Paper"></bean>
+
+<bean id="Black" class="yxm.pojo.BlackInk"></bean>
+<bean id="Color" class="yxm.pojo.ColorInk"></bean>
+
+
+</beans>
